@@ -1,0 +1,14 @@
+footer {
+    background: #363c49;
+    font-size: 150%;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 2rem;
+        }
+        a{
+                font-size: 150%;
+                text-decoration: none;
+        }
+}

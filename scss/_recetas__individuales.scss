@@ -1,0 +1,94 @@
+.recetas__nombre {
+    font-size: $f-size*4;
+    text-align: center;
+    padding: 4rem;
+    background-color: #faebd7;
+    color: #363c49;
+    p {
+        padding: 3rem 0 1px;
+    }
+}
+
+.recetas__ingredientes {
+    padding: 2rem;
+    font-size: $f-size*2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: solid 1px #8a8888;
+    margin: 3rem 20%;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 5px;
+        img {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            margin: auto;
+            justify-items: center;
+            align-items: center;
+            width: 600px;
+            border-radius: 10px;
+        }
+        h3 {
+            margin: 0 auto;
+            padding-bottom: 1rem;
+            font-size: $f-size*1.5;
+        }
+        h4 {
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            margin: 0 auto;
+            padding: 2rem 2rem 0.5rem 5rem;
+        }
+        li {
+            padding-top: 0.5rem;
+        }
+}
+
+.recetas__procedimiento {
+    padding: 2rem;
+    font-size: $f-size*2;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border: solid 1px #8a8888;  
+    margin: 1% 20%;
+    border-radius: 5px;
+        h4 {
+            font-size: $f-size*1.75;
+            text-align: center;
+            padding: 2rem;
+        }   
+        h5 {
+            font-size: $f-size*1.25;
+        }
+        ol {
+            padding: 2rem;
+            line-height: 2.5rem;
+            list-style: decimal;
+        }
+        li {
+            padding: 1rem;
+        }
+}
+
+.recetas__relacionadas {
+    padding: 2rem;
+    font-size: $f-size*2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    border: solid 1px #8a8888;
+    margin: 1% 20%;
+    border-radius: 5px;
+        h2 {
+            text-align: center;
+            font-size: 175%;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            padding-bottom: 2rem;
+        }
+}

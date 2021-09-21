@@ -1,0 +1,29 @@
+header {
+    background: #363c49;
+    overflow: hidden;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem 20%;
+        ul {
+            list-style: none;
+            display: flex;
+            a {
+                text-decoration: none;
+                color: #faebd7;
+                background: #363c49;
+                padding: 2rem;
+                font-weight: bold;
+                font-size: 175%;
+                transition: all .5s;
+            }
+            a:hover {
+                    color: #363c49;
+                    background: #faebd7;
+            }
+    }
+}
+       
