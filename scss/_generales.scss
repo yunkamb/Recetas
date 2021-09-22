@@ -18,3 +18,33 @@ html {
 body {
     background: #f5f1ec;
 }
+
+.body__404 {
+    padding: 5% 30%;
+    display: grid;
+    font-size: 300%;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+        div {
+            display: flex;
+        }
+        img {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        p {
+            grid-column-start: 1;
+        }
+        
+}
+
+.button__404 {
+    background-color: #363c49;
+    border: none;
+    border-radius: 10px;
+    color: #faebd7;
+    padding: 15px 30px;
+    grid-row-start: 2;
+}
