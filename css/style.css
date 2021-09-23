@@ -260,7 +260,7 @@ header {
   padding: 2rem;
 }
 
-.recetas__procedimiento h5 {
+.recetas__procedimiento h3 {
   font-size: 125%;
 }
 
@@ -443,7 +443,7 @@ footer a {
         grid-row-start: 1;
     width: 100%;
   }
-  .recetas__ingredientes h3 {
+  .recetas__ingredientes h2 {
     padding: 1rem;
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -469,13 +469,13 @@ footer a {
     border: solid 1px #8a8888;
     margin: 1% 20%;
   }
-  .recetas__procedimiento h4 {
+  .recetas__procedimiento h3 {
     font-size: 250%;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     padding: 2rem;
   }
-  .recetas__procedimiento h5 {
+  .recetas__procedimiento h4 {
     font-size: 125%;
   }
   .recetas__procedimiento ol {
@@ -503,11 +503,13 @@ footer a {
   .recetas__relacionadas a {
     -ms-grid-column: 1;
         grid-column-start: 1;
-    padding: 0.5rem;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .recetas__relacionadas h2 {
     text-align: center;
-    font-size: 250%;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 6;
