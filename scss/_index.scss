@@ -1,11 +1,87 @@
-.mainBody h2 {
-    text-align: center;
-    font-size: 250%
+.recetas__cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem;
+    font-size: 1.5rem;
+    border: solid 1px #8a8888;
+    margin: 3rem 20%;
+    border-radius: 5px;
 }
 
-.indexRecetas p {
-    font-size: 150%;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 900;
+.recetas__carnes::before {
+    content: "";
+    background-image: url(../images/recetas--bg/carnes.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(2px);
 }
+.recetas__pastas::before{
+    content: "";
+    background-image: url(../images/recetas--bg/pastas.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+.recetas__pescados::before {
+    content: "";
+    background-image: url(../images/recetas--bg/pescados.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+.recetas__vegetales::before {
+    content: "";
+    background-image: url(../images/recetas--bg/vegetales.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+.recetas__pasteleria::before {
+    content: "";
+    background-image: url(../images/recetas--bg/pasteleria.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+.recetas__panaderia::before {
+    content: "";
+    background-image: url(../images/recetas--bg/panaderia.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+
+
+.index__cards h2 {
+    position: relative;
+    color: #363c49;  
+    font-size: 5rem;
+    line-height: 0.9;
+    text-align: center;
+  }
