@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Recetas</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta name="description"
         content="Recetas: Las mejores y más variadas recetas, carnes, pastas, pescados, panadería, etc">
@@ -28,56 +29,57 @@
         </nav>
     </header>
     <div class="index__banner">
-        <h1>Bienvenidos</h1>
-        <p></p>
-        <img src="images/recetas__banner.jpg" alt="index__banner">
+        <h1>¡Bienvenidos a un mundo de Recetas!</h1>
+        <p>Aprende a preparar las mejores recetas de cocina casera. Con explicaciones detalladas paso a paso, fotos y los mejores trucos, estos platos siempre salen de rechupete. Anímate a cocinar todos los días para llevar una alimentación más sana y equilibrada ¡Que la dificultad no sea una excusa!</p>
     </div>
     <section class="index__cards">
-        <div class="recetas__cards recetas__carnes">
+        <div data-aos="fade-up" class="recetas__cards recetas__carnes">
             <div class="cards__container">
-                <h2>CARNES</h2>
+                <h2><a href="pages/carnes.html">CARNES</a></h2>
                 <p>Las mejores y más variadas recetas con la carne como protagonista absoluto.</p>
             </div>
         </div>
 
-        <div class="recetas__cards recetas__pastas">
+        <div data-aos="fade-up" class="recetas__cards recetas__pastas">
             <div class="cards__container">
-                <h2>PASTAS</h2>
+                <h2><a href="pages/pastas.html">PASTAS</h2></a> 
                 <p>Las más deliciosas recetas con pasta. </p>
             </div>
         </div>
 
-        <div class="recetas__cards recetas__pescados">
+        <div data-aos="fade-up" class="recetas__cards recetas__pescados">
             <div class="cards__container">
-                <h2>PESCADOS</h2>
+                <h2><a href="pages/pescados.html">PESCADOS</h2></a> 
                 <p>Los productos más nobles del mar, cocinados con sabiduría.</p>
             </div>
         </div>
 
-        <div class="recetas__cards recetas__vegetales">
+        <div data-aos="fade-up" class="recetas__cards recetas__vegetales">
             <div class="cards__container">
-                <h2>VEGETALES</h2>
+                <h2><a href="pages/vegetariano.html">VEGETALES</h2></a> 
                 <p>¿Quién dijo que las verduras no son ricas? </p>
             </div>
         </div>
 
-        <div class="recetas__cards recetas__pasteleria">
+        <div data-aos="fade-up" class="recetas__cards recetas__pasteleria">
             <div class="cards__container">
-                <h2>PASTELERIA</h2>
+                <h2><a href="pages/pasteleria.html">PASTELERIA</h2></a> 
                 <p>Un recetario especialmente dedicado a los más golosos. </p>
             </div>
         </div>
 
-        <div class="recetas__cards recetas__panaderia">
+        <div data-aos="fade-up" class="recetas__cards recetas__panaderia">
             <div class="cards__container">
-                <h2>PANADERÍA</h2>
+                <h2><a href="pages/panaderia.html">PANADERIA</h2></a> 
                 <p>No hace falta depender siempre de la pizzería o la panadería. </p>
             </div>
         </div>
     </section>
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <footer>
         <h2><a href="#index.html">Recetas</a></h2>

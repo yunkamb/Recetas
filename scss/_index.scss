@@ -1,6 +1,25 @@
-
-
-
+.index__banner {
+    font-size: 300%;
+    text-align: center;
+    background-color: #faebd7;
+    color: #363c49;
+        h1{
+            font-weight: 300;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            background-color: #363c49;
+            color: #faebd7;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 5rem;
+        }
+}
 
 .index__cards {
     display: grid;
@@ -9,6 +28,14 @@
     font-size: 2rem;
     color: #262a33;
     gap: 5rem;
+    padding-block: 5rem;
+        a {
+            text-decoration: none;
+            color: #262a33;
+        }
+        a:hover {
+            color: #6e6a63;
+        }
 }
 
 .recetas__cards {
@@ -26,9 +53,10 @@
     padding: 1rem;
     position: relative;
         h2 {
-            background-color: #f5f1ecb2;
+            background-color: #f5f1ecc5;
             margin-inline: 40%;
             padding: 1rem;
+            border-radius: 10px;
         }
         p {
             @extend h2;

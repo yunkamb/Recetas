@@ -62,6 +62,43 @@ body {
       grid-row-start: 2;
 }
 
+.index__banner {
+  font-size: 300%;
+  text-align: center;
+  background-color: #faebd7;
+  color: #363c49;
+}
+
+.index__banner h1 {
+  font-weight: 300;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index__banner p {
+  background-color: #363c49;
+  color: #faebd7;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 5rem;
+}
+
 .index__cards {
   display: -ms-grid;
   display: grid;
@@ -71,6 +108,16 @@ body {
   font-size: 2rem;
   color: #262a33;
   gap: 5rem;
+  padding-block: 5rem;
+}
+
+.index__cards a {
+  text-decoration: none;
+  color: #262a33;
+}
+
+.index__cards a:hover {
+  color: #6e6a63;
 }
 
 .recetas__cards {
@@ -98,9 +145,10 @@ body {
 }
 
 .cards__container h2, .cards__container p {
-  background-color: #f5f1ecb2;
+  background-color: #f5f1ecc5;
   margin-inline: 40%;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .cards__container p {
@@ -180,6 +228,43 @@ header {
   background: #faebd7;
 }
 
+.index__banner {
+  font-size: 300%;
+  text-align: center;
+  background-color: #faebd7;
+  color: #363c49;
+}
+
+.index__banner h1 {
+  font-weight: 300;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index__banner p {
+  background-color: #363c49;
+  color: #faebd7;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 5rem;
+}
+
 .index__cards {
   display: -ms-grid;
   display: grid;
@@ -189,6 +274,16 @@ header {
   font-size: 2rem;
   color: #262a33;
   gap: 5rem;
+  padding-block: 5rem;
+}
+
+.index__cards a {
+  text-decoration: none;
+  color: #262a33;
+}
+
+.index__cards a:hover {
+  color: #6e6a63;
 }
 
 .recetas__cards {
@@ -216,9 +311,10 @@ header {
 }
 
 .cards__container h2, .cards__container p {
-  background-color: #f5f1ecb2;
+  background-color: #f5f1ecc5;
   margin-inline: 40%;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .cards__container p {
