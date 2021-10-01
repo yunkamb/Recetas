@@ -195,14 +195,24 @@ header {
 }
 
 .nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 20%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  padding: 2rem;
+}
+
+.nav img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav ul {
@@ -371,7 +381,7 @@ header {
   padding: 2rem;
   font-size: 1.5rem;
   border: solid 1px #8a8888;
-  margin: 3rem 20%;
+  margin-inline: 20%;
   border-radius: 5px;
   display: -ms-grid;
   display: grid;

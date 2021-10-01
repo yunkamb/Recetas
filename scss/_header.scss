@@ -4,10 +4,15 @@ header {
 }
 
 .nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 2rem 20%;
+    column-gap: 10%;
+    padding: 2rem;
+    img {
+        display: flex;
+        
+    }
         ul {
             list-style: none;
             display: flex;
