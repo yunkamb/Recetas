@@ -1,87 +1,70 @@
+
+
+
+
+.index__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 20%;
+    font-size: 2rem;
+    color: #262a33;
+    gap: 5rem;
+}
+
 .recetas__cards {
+    display: grid;
+    height: 25vh;
     position: relative;
+    border-radius: 10px;
+}
+
+.cards__container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15rem;
-    font-size: 1.5rem;
-    border: solid 1px #8a8888;
-    margin: 3rem 20%;
-    border-radius: 5px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+        h2 {
+            background-color: #f5f1ecb2;
+            margin-inline: 40%;
+            padding: 1rem;
+        }
+        p {
+            @extend h2;
+            margin-inline: 20%;
+        }
 }
 
 .recetas__carnes::before {
-    content: "";
     background-image: url(../images/recetas--bg/carnes.jpeg);
+    content: "";
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+    border-radius: 15px;
     filter: blur(2px);
 }
 .recetas__pastas::before{
-    content: "";
     background-image: url(../images/recetas--bg/pastas.jpeg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: blur(2px);
+    @extend .recetas__carnes::before;
 }
 .recetas__pescados::before {
-    content: "";
     background-image: url(../images/recetas--bg/pescados.jpeg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: blur(2px);
+    @extend .recetas__carnes::before;
 }
 .recetas__vegetales::before {
-    content: "";
     background-image: url(../images/recetas--bg/vegetales.jpeg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: blur(2px);
+    @extend .recetas__carnes::before;
 }
 .recetas__pasteleria::before {
-    content: "";
     background-image: url(../images/recetas--bg/pasteleria.jpeg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: blur(2px);
+    @extend .recetas__carnes::before;
 }
 .recetas__panaderia::before {
-    content: "";
     background-image: url(../images/recetas--bg/panaderia.jpeg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: blur(2px);
+    @extend .recetas__carnes::before;
 }
-
-
-.index__cards h2 {
-    position: relative;
-    color: #363c49;  
-    font-size: 5rem;
-    line-height: 0.9;
-    text-align: center;
-  }

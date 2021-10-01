@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto+Mono:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Roboto+Mono:wght@300;400&display=swap");
 /*
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto Mono', monospace;
@@ -13,6 +13,7 @@ font-family: 'Roboto Mono', monospace;
 html {
   font-size: 62.5%;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -61,108 +62,83 @@ body {
       grid-row-start: 2;
 }
 
+.index__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-inline: 20%;
+  font-size: 2rem;
+  color: #262a33;
+  gap: 5rem;
+}
+
 .recetas__cards {
+  display: -ms-grid;
+  display: grid;
+  height: 25vh;
   position: relative;
+  border-radius: 10px;
+}
+
+.cards__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 15rem;
-  font-size: 1.5rem;
-  border: solid 1px #8a8888;
-  margin: 3rem 20%;
-  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  position: relative;
 }
 
-.recetas__carnes::before {
-  content: "";
+.cards__container h2, .cards__container p {
+  background-color: #f5f1ecb2;
+  margin-inline: 40%;
+  padding: 1rem;
+}
+
+.cards__container p {
+  margin-inline: 20%;
+}
+
+.recetas__carnes::before, .recetas__pastas::before, .recetas__pescados::before, .recetas__vegetales::before, .recetas__pasteleria::before, .recetas__panaderia::before {
   background-image: url(../images/recetas--bg/carnes.jpeg);
+  content: "";
   background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+  border-radius: 15px;
   -webkit-filter: blur(2px);
           filter: blur(2px);
 }
 
 .recetas__pastas::before {
-  content: "";
   background-image: url(../images/recetas--bg/pastas.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__pescados::before {
-  content: "";
   background-image: url(../images/recetas--bg/pescados.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__vegetales::before {
-  content: "";
   background-image: url(../images/recetas--bg/vegetales.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__pasteleria::before {
-  content: "";
   background-image: url(../images/recetas--bg/pasteleria.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__panaderia::before {
-  content: "";
   background-image: url(../images/recetas--bg/panaderia.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
-.index__cards h2 {
-  position: relative;
-  color: #363c49;
-  font-size: 5rem;
-  line-height: 0.9;
-  text-align: center;
 }
 
 header {
@@ -204,108 +180,83 @@ header {
   background: #faebd7;
 }
 
+.index__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-inline: 20%;
+  font-size: 2rem;
+  color: #262a33;
+  gap: 5rem;
+}
+
 .recetas__cards {
+  display: -ms-grid;
+  display: grid;
+  height: 25vh;
   position: relative;
+  border-radius: 10px;
+}
+
+.cards__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 15rem;
-  font-size: 1.5rem;
-  border: solid 1px #8a8888;
-  margin: 3rem 20%;
-  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  position: relative;
 }
 
-.recetas__carnes::before {
-  content: "";
+.cards__container h2, .cards__container p {
+  background-color: #f5f1ecb2;
+  margin-inline: 40%;
+  padding: 1rem;
+}
+
+.cards__container p {
+  margin-inline: 20%;
+}
+
+.recetas__carnes::before, .recetas__pastas::before, .recetas__pescados::before, .recetas__vegetales::before, .recetas__pasteleria::before, .recetas__panaderia::before {
   background-image: url(../images/recetas--bg/carnes.jpeg);
+  content: "";
   background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+  border-radius: 15px;
   -webkit-filter: blur(2px);
           filter: blur(2px);
 }
 
 .recetas__pastas::before {
-  content: "";
   background-image: url(../images/recetas--bg/pastas.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__pescados::before {
-  content: "";
   background-image: url(../images/recetas--bg/pescados.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__vegetales::before {
-  content: "";
   background-image: url(../images/recetas--bg/vegetales.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__pasteleria::before {
-  content: "";
   background-image: url(../images/recetas--bg/pasteleria.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .recetas__panaderia::before {
-  content: "";
   background-image: url(../images/recetas--bg/panaderia.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
-.index__cards h2 {
-  position: relative;
-  color: #363c49;
-  font-size: 5rem;
-  line-height: 0.9;
-  text-align: center;
 }
 
 .recetas__titulo {
@@ -352,7 +303,7 @@ header {
   grid-row-end: 2;
 }
 
-.recetas__principal .cards h2 {
+.recetas__principal .cards h2, .recetas__principal .cards .cards__container p, .cards__container .recetas__principal .cards p {
   padding-left: 2rem;
   font-size: 200%;
   -ms-grid-column: 2;
@@ -361,12 +312,12 @@ header {
       grid-row-start: 2;
 }
 
-.recetas__principal .cards h2 a {
+.recetas__principal .cards h2 a, .recetas__principal .cards .cards__container p a, .cards__container .recetas__principal .cards p a {
   color: #545b69;
   text-decoration: none;
 }
 
-.recetas__principal .cards h2 a:hover {
+.recetas__principal .cards h2 a:hover, .recetas__principal .cards .cards__container p a:hover, .cards__container .recetas__principal .cards p a:hover {
   color: #a59e95;
 }
 
@@ -430,13 +381,13 @@ header {
   border-radius: 10px;
 }
 
-.recetas__ingredientes h2 {
+.recetas__ingredientes h2, .recetas__ingredientes .cards__container p, .cards__container .recetas__ingredientes p {
   margin: 0 auto;
   padding-bottom: 1rem;
   font-size: 150%;
 }
 
-.recetas__ingredientes h2 {
+.recetas__ingredientes h2, .recetas__ingredientes .cards__container p, .cards__container .recetas__ingredientes p {
   padding-bottom: 0.5rem;
 }
 
@@ -463,7 +414,7 @@ header {
   border-radius: 5px;
 }
 
-.recetas__procedimiento h2 {
+.recetas__procedimiento h2, .recetas__procedimiento .cards__container p, .cards__container .recetas__procedimiento p {
   font-size: 175%;
   text-align: center;
   padding: 2rem;
@@ -497,7 +448,7 @@ header {
   border-radius: 5px;
 }
 
-.recetas__otros h2 {
+.recetas__otros h2, .recetas__otros .cards__container p, .cards__container .recetas__otros p {
   padding: 2rem;
   text-align: center;
   font-size: 175%;
@@ -517,7 +468,7 @@ footer {
   text-align: center;
 }
 
-footer h2 {
+footer h2, footer .cards__container p, .cards__container footer p {
   font-size: 250%;
   padding: 2rem;
 }
@@ -660,7 +611,7 @@ footer a:hover {
         grid-row-start: 1;
     width: 100%;
   }
-  .recetas__ingredientes h2 {
+  .recetas__ingredientes h2, .recetas__ingredientes .cards__container p, .cards__container .recetas__ingredientes p {
     padding: 1rem;
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -725,7 +676,7 @@ footer a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .recetas__relacionadas h2 {
+  .recetas__relacionadas h2, .recetas__relacionadas .cards__container p, .cards__container .recetas__relacionadas p {
     text-align: center;
     -ms-grid-column: 1;
         grid-column-start: 1;
