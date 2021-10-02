@@ -11,12 +11,12 @@
 
 .recetas__ingredientes {
     padding: 2rem;
-    font-size: $f-size*2;
+    font-size: 200%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     border: solid 1px #8a8888;
-    margin: 3rem 20%;
+    margin: 2.5% 20%;
     grid-row-start: 1;
     grid-row-end: 5;
     border-radius: 5px;

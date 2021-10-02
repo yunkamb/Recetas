@@ -461,7 +461,7 @@ header {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   border: solid 1px #8a8888;
-  margin: 3rem 20%;
+  margin: 2.5% 20%;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 5;
