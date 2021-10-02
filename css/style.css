@@ -146,7 +146,7 @@ body {
 
 .cards__container h2, .cards__container p {
   background-color: #f5f1ecc5;
-  margin-inline: 40%;
+  margin-inline: 24%;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -322,7 +322,7 @@ header {
 
 .cards__container h2, .cards__container p {
   background-color: #f5f1ecc5;
-  margin-inline: 40%;
+  margin-inline: 24%;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -665,25 +665,29 @@ footer a:hover {
 
 @media (max-width: 576px) {
   .nav {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .nav ul {
-    list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    font-size: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1rem;
+  }
+  .nav ul {
+    list-style: none;
+    font-size: 75%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav ul a {
     text-decoration: none;
@@ -692,6 +696,7 @@ footer a:hover {
     font-weight: bold;
     -webkit-transition: all .5s;
     transition: all .5s;
+    display: block;
   }
   .nav ul a:hover {
     color: #363c49;
@@ -746,7 +751,6 @@ footer a:hover {
   .recetas__procedimiento h3 {
     font-size: 250%;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
     padding: 2rem;
   }
   .recetas__procedimiento h4 {
@@ -761,7 +765,7 @@ footer a:hover {
   .recetas__procedimiento li {
     padding: 0.5rem;
   }
-  .recetas__relacionadas {
+  .recetas__otros {
     padding: 2rem;
     font-size: 150%;
     display: -ms-grid;
@@ -774,7 +778,7 @@ footer a:hover {
     border: solid 1px #8a8888;
     margin: 1% 20%;
   }
-  .recetas__relacionadas a {
+  .recetas__otros a {
     -ms-grid-column: 1;
         grid-column-start: 1;
     justify-items: center;
@@ -782,12 +786,125 @@ footer a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .recetas__relacionadas h2, .recetas__relacionadas .cards__container p, .cards__container .recetas__relacionadas p {
+  .recetas__otros h2, .recetas__otros .cards__container p, .cards__container .recetas__otros p {
     text-align: center;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 6;
     padding-bottom: 2rem;
+  }
+  .recetas__otros img {
+    width: 100%;
+  }
+  .recetas__principal {
+    padding: 2rem;
+    font-size: 1.5rem;
+    border: solid 1px #8a8888;
+    margin-inline: 20%;
+    border-radius: 5px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .recetas__principal .cards {
+    padding: 2rem;
+    border-bottom: solid 1px #8a8888;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recetas__principal .cards img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .recetas__principal .cards h2, .recetas__principal .cards .cards__container p, .cards__container .recetas__principal .cards p {
+    padding: 2rem;
+    font-size: 200%;
+  }
+  .recetas__principal .cards h2 a, .recetas__principal .cards .cards__container p a, .cards__container .recetas__principal .cards p a {
+    color: #545b69;
+    text-decoration: none;
+  }
+  .recetas__principal .cards h2 a:hover, .recetas__principal .cards .cards__container p a:hover, .cards__container .recetas__principal .cards p a:hover {
+    color: #a59e95;
+  }
+  .recetas__principal .cards p {
+    padding: 1rem 0 0 2rem;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    font-size: 125%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 3rem;
+  }
+  .index__banner {
+    font-size: 250%;
+    text-align: center;
+    background-color: #faebd7;
+    color: #363c49;
+  }
+  .index__banner h1 {
+    font-weight: 300;
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index__banner p {
+    background-color: #363c49;
+    color: #faebd7;
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 3rem;
+    font-size: 80%;
+    padding: 1rem;
+  }
+  .index__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-inline: 15%;
+    font-size: 1.5rem;
+    color: #262a33;
+    gap: 5rem;
+    padding-block: 5rem;
+  }
+  .index__cards a {
+    text-decoration: none;
+    color: #262a33;
+  }
+  .index__cards a:hover {
+    color: #6e6a63;
   }
 }
 /*# sourceMappingURL=style.css.map */
