@@ -15,7 +15,6 @@
             color: #faebd7;
             height: 25vh;
             display: flex;
-            justify-content: center;
             align-items: center;
             line-height: 5rem;
         }
@@ -48,19 +47,19 @@
 .cards__container {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     position: relative;
+    text-align: center;
         h2 {
             background-color: #f5f1ecc5;
-            margin-inline: 40%;
             padding: 1rem;
             border-radius: 10px;
+            width: fit-content;
         }
         p {
             @extend h2;
-            margin-inline: 20%;
         }
 }
 
