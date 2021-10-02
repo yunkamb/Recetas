@@ -1,4 +1,4 @@
-@media (max-width: 576px){
+@media (max-width: 480px){
     .nav {
         display: flex;
         flex-direction: column;
@@ -25,6 +25,46 @@
                 }
             }
             
+    }
+
+    .index__banner {
+        font-size: 250%;
+        text-align: center;
+        background-color: #faebd7;
+        color: #363c49;
+            h1{
+                font-weight: 300;
+                height: 25vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            p {
+                background-color: #363c49;
+                color: #faebd7;
+                height: 25vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 2.5rem;
+                font-size: 80%;
+                padding: 1rem;
+            }
+    }
+
+    .index__cards {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        color: #262a33;
+        gap: 5rem;
+            a {
+                text-decoration: none;
+                color: #262a33;
+            }
+            a:hover {
+                color: #6e6a63;
+            }
     }
 
     .recetas__ingredientes {
@@ -110,9 +150,9 @@
         padding: 2rem;
         font-size: 1.5rem;
         border: solid 1px #8a8888;
-        margin-inline: 20%;
         border-radius: 5px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         .cards {
             padding: 2rem;
             border-bottom: solid 1px #8a8888;
@@ -147,44 +187,5 @@
         }
     }
 
-    .index__banner {
-        font-size: 250%;
-        text-align: center;
-        background-color: #faebd7;
-        color: #363c49;
-            h1{
-                font-weight: 300;
-                height: 25vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            p {
-                background-color: #363c49;
-                color: #faebd7;
-                height: 30vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                line-height: 3rem;
-                font-size: 80%;
-                padding: 1rem;
-            }
-    }
-    .index__cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-inline: 15%;
-        font-size: 1.5rem;
-        color: #262a33;
-        gap: 5rem;
-        padding-block: 5rem;
-            a {
-                text-decoration: none;
-                color: #262a33;
-            }
-            a:hover {
-                color: #6e6a63;
-            }
-    }
+
 }

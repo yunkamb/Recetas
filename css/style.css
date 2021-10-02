@@ -663,7 +663,7 @@ footer a:hover {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -701,6 +701,61 @@ footer a:hover {
   .nav ul a:hover {
     color: #363c49;
     background: #faebd7;
+  }
+  .index__banner {
+    font-size: 250%;
+    text-align: center;
+    background-color: #faebd7;
+    color: #363c49;
+  }
+  .index__banner h1 {
+    font-weight: 300;
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index__banner p {
+    background-color: #363c49;
+    color: #faebd7;
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 2.5rem;
+    font-size: 80%;
+    padding: 1rem;
+  }
+  .index__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.5rem;
+    color: #262a33;
+    gap: 5rem;
+  }
+  .index__cards a {
+    text-decoration: none;
+    color: #262a33;
+  }
+  .index__cards a:hover {
+    color: #6e6a63;
   }
   .recetas__ingredientes {
     padding: 2rem;
@@ -800,10 +855,14 @@ footer a:hover {
     padding: 2rem;
     font-size: 1.5rem;
     border: solid 1px #8a8888;
-    margin-inline: 20%;
     border-radius: 5px;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .recetas__principal .cards {
     padding: 2rem;
@@ -851,60 +910,6 @@ footer a:hover {
         -ms-flex-align: center;
             align-items: center;
     line-height: 3rem;
-  }
-  .index__banner {
-    font-size: 250%;
-    text-align: center;
-    background-color: #faebd7;
-    color: #363c49;
-  }
-  .index__banner h1 {
-    font-weight: 300;
-    height: 25vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .index__banner p {
-    background-color: #363c49;
-    color: #faebd7;
-    height: 30vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 3rem;
-    font-size: 80%;
-    padding: 1rem;
-  }
-  .index__cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    margin-inline: 15%;
-    font-size: 1.5rem;
-    color: #262a33;
-    gap: 5rem;
-    padding-block: 5rem;
-  }
-  .index__cards a {
-    text-decoration: none;
-    color: #262a33;
-  }
-  .index__cards a:hover {
-    color: #6e6a63;
   }
 }
 /*# sourceMappingURL=style.css.map */
