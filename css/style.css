@@ -869,14 +869,8 @@ footer a:hover {
     color: #363c49;
     background: #faebd7;
   }
-  .hamburger {
-    display: block;
-    position: fixed;
-    z-index: 100;
-    border: #faebd7 solid 1px;
-    color: #faebd7;
-    background: #363c49;
-    cursor: pointer;
+  .nav__index {
+    display: none;
   }
   .index__banner {
     font-size: 175%;
