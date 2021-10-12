@@ -547,7 +547,7 @@ header {
       grid-template-rows: 1fr, 1fr, 1fr;
   border: solid 1px #8a8888;
   border-radius: 5px;
-  margin-inline: 20%;
+  margin: auto 20% 2rem;
 }
 
 .recetas__otros h2, .recetas__otros .cards__container p, .cards__container .recetas__otros p {
@@ -568,6 +568,7 @@ footer {
   background: #363c49;
   color: #faebd7;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 footer h2, footer .cards__container p, .cards__container footer p {
@@ -675,6 +676,12 @@ footer a:hover {
   .index__banner p {
     font-size: 80%;
   }
+  .index__cards {
+    margin-inline: 5%;
+  }
+  .recetas__principal {
+    margin-inline: 5%;
+  }
   .recetas__principal .cards img {
     width: 300px;
   }
@@ -683,6 +690,7 @@ footer a:hover {
   }
   .recetas__ingredientes {
     font-size: 150%;
+    margin-inline: 5%;
   }
   .recetas__ingredientes img {
     width: 100%;
@@ -690,6 +698,7 @@ footer a:hover {
   .recetas__procedimiento {
     padding: 2rem;
     font-size: 150%;
+    margin-inline: 5%;
   }
   .recetas__procedimiento h3 {
     text-align: center;
@@ -697,6 +706,7 @@ footer a:hover {
   }
   .recetas__otros {
     font-size: 150%;
+    margin-inline: 5%;
   }
 }
 
@@ -720,6 +730,10 @@ footer a:hover {
   }
   .index__cards {
     font-size: 175%;
+    margin-inline: 5%;
+  }
+  .recetas__principal {
+    margin-inline: 5%;
   }
   .recetas__principal .cards {
     display: -webkit-box;
@@ -750,6 +764,7 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-inline: 5%;
   }
   .recetas__ingredientes img {
     width: 100%;
@@ -762,6 +777,9 @@ footer a:hover {
     width: -moz-max-content;
     width: max-content;
   }
+  .recetas__procedimiento {
+    margin-inline: 5%;
+  }
   .recetas__otros {
     padding: 2rem;
     display: -webkit-box;
@@ -772,6 +790,7 @@ footer a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-items: center;
+    margin-inline: 5%;
   }
   .recetas__otros h2, .recetas__otros .cards__container p, .cards__container .recetas__otros p {
     padding-bottom: 2rem;
@@ -811,7 +830,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -849,6 +868,15 @@ footer a:hover {
   .nav ul a:hover {
     color: #363c49;
     background: #faebd7;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    border: #faebd7 solid 1px;
+    color: #faebd7;
+    background: #363c49;
+    cursor: pointer;
   }
   .index__banner {
     font-size: 175%;
@@ -893,6 +921,7 @@ footer a:hover {
     font-size: 1.5rem;
     color: #262a33;
     gap: 5rem;
+    margin-inline: 5%;
   }
   .index__cards a {
     text-decoration: none;
@@ -912,6 +941,7 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-inline: 5%;
   }
   .recetas__principal .cards {
     border-bottom: solid 1px #8a8888;
@@ -990,6 +1020,7 @@ footer a:hover {
             flex-direction: column;
     border: solid 1px #8a8888;
     line-height: 2rem;
+    margin-inline: 5%;
   }
   .recetas__procedimiento h3 {
     text-align: center;
@@ -1009,7 +1040,7 @@ footer a:hover {
         grid-template-rows: auto;
     justify-items: center;
     border: solid 1px #8a8888;
-    margin: 1% 20%;
+    margin-inline: 5%;
   }
   .recetas__otros a {
     -ms-grid-column: 1;

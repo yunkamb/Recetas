@@ -12,7 +12,12 @@
             }
     }
 
+    .index__cards {
+        margin-inline: 5%;
+    }
+
     .recetas__principal {
+        margin-inline: 5%;
         .cards {
             img{
                 width: 300px;
@@ -25,6 +30,7 @@
 
     .recetas__ingredientes {
         font-size: 150%;
+        margin-inline: 5%;
         img {
             width: 100%;
         }
@@ -33,6 +39,7 @@
     .recetas__procedimiento {
         padding: 2rem;
         font-size: 150%;
+        margin-inline: 5%;
         h3 {
             text-align: center;
             padding: 2rem 0 0;
@@ -41,6 +48,7 @@
     
     .recetas__otros {
         font-size: 150%;
+        margin-inline: 5%;
     }
 }
 
@@ -65,9 +73,11 @@
 
     .index__cards {
         font-size: 175%;
+        margin-inline: 5%;
     }
 
     .recetas__principal {
+        margin-inline: 5%;
         .cards {
             display: flex;
             justify-content: center;
@@ -85,6 +95,7 @@
     .recetas__ingredientes {
         display: flex;
         flex-direction: column;
+        margin-inline: 5%;
             img {
                 width: 100%;
             }   
@@ -95,12 +106,17 @@
                 width: max-content;
             }
     }
+
+    .recetas__procedimiento {
+        margin-inline: 5%;
+    }
     
     .recetas__otros {
         padding: 2rem;
         display: flex;
         flex-direction: column;
         justify-items: center;
+        margin-inline: 5%;
             h2 {
                 padding-bottom: 2rem;
             }
@@ -132,7 +148,7 @@
 
 }
 
-@media (max-width: 576px){
+@media (max-width: 480px){
     .nav {
         display: flex;
         flex-direction: column;
@@ -158,8 +174,19 @@
                     background: #faebd7;
                 }
             }
-            
+    
     }
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        border: #faebd7 solid 1px;
+        color: #faebd7;
+        background: #363c49;
+        cursor: pointer;
+    }
+
 
     .index__banner {
         font-size: 175%;
@@ -188,6 +215,7 @@
         font-size: 1.5rem;
         color: #262a33;
         gap: 5rem;
+        margin-inline: 5%;
             a {
                 text-decoration: none;
                 color: #262a33;
@@ -203,6 +231,7 @@
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        margin-inline: 5%;
         .cards {
             border-bottom: solid 1px #8a8888;
             display: flex;
@@ -256,6 +285,7 @@
         flex-direction: column;
         border: solid 1px #8a8888;  
         line-height: 2rem;
+        margin-inline: 5%;
             h3 {
                 text-align: center;
                 padding: 2rem 0 0;
@@ -273,7 +303,7 @@
         grid-template-rows: auto;
         justify-items: center;
         border: solid 1px #8a8888;
-        margin: 1% 20%;
+        margin-inline: 5%;
             a {
                 grid-column-start: 1;
                 justify-items: center;
