@@ -846,7 +846,6 @@ footer a:hover {
   }
   .nav ul {
     list-style: none;
-    font-size: 75%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
@@ -855,6 +854,7 @@ footer a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 1rem;
   }
   .nav ul a {
     text-decoration: none;

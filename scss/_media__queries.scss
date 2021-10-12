@@ -156,11 +156,11 @@
         gap: 1rem;
             ul {
                 list-style: none;
-                font-size: 75%;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 text-align: center;
                 justify-content: space-between;
+                gap: 1rem;
                 a {
                     text-decoration: none;
                     color: #faebd7;
